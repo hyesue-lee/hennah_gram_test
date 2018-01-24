@@ -19,7 +19,7 @@
             </a>
         </div>
         <form action="#" method="get">
-            <input placeholder="serch" type="text" name="serch" value="" required>
+            <input placeholder="search" type="text" name="search" value="" required>
         </form>
         <nav class="header__navigation">
             <ul class="header_list">
@@ -42,40 +42,42 @@
             </ul>
         </nav>
     </header>
-    <main>feed</main>
-    <main>
+    <!--main parts-->
+    <main class="feed">
         <div class="photo">
-            <header class="photo_header">
-                <div class="photo_small">
-                    <img src="images\pple.jpg">
+            <header class="photo__header">
+                <div class="photo__header__contents">
+                    <img src="images\pple.jpg" class="photo__header__img">
                 </div>
-                <span class="user_id">cheers.hennah</span>
+                <span class="photo__header__user">cheers.hennah</span>
             </header>
-            <div class="photo_main">
-                <img src="">
+
+            <div class="photo__main">
+                <img src="images\photo.jpg" class="photo__main__img">
             </div>
             <footer>
-                <div class="photo_likes">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <div class="photo__icons">
+                    <i class="fa fa-heart-o " aria-hidden="true "></i>
+                    <i class="fa fa-comment-o " aria-hidden="true "></i>
                 </div>
-                <div class="photo_comments">
-                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <div class="photo__icons">
+                    <i class="fa fa-bookmark-o " aria-hidden="true "></i>
                 </div>
-                <div class="photo_bookmark">
-                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                </div>
-                <span class="photo_views">14,490 views</span>
-                <ul>
-                    <li class="photo_list"> someone
+                <span class="photo__views ">14,490 views</span>
+                <ul class="photo__comments__list ">
+                    <li class="photo__comments__list-itme">
+                        <span class="photo__comments__user">jh</span> someone
                     </li>
-                    <li class="photo_list"> 123123123213
+                    <li class="photo__comments__list-itme">
+                        <span class="photo__comments__user">almi</span> 123123123213
                     </li>
-                    <li class="photo_list"> asgarafr
+                    <li class="photo__comments__list-itme">
+                        <span class="photo__comments__user">hennah</span> asgarafr
                     </li>
                 </ul>
-                <span class="photo_times">2 days ago</span>
+                <span class="photo_times ">2 days ago</span>
                 <div>
-                    <textarea name="input_feed_comment" rows="10" cols="50">Write something here</textarea>
+                    <textarea name="input_feed_comment " rows="5 " cols="50 ">Write something here</textarea>
                 </div>
 
 
@@ -83,46 +85,46 @@
 
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer__column">
-            <nav class="footer__navigation">
-                <ul class="footer__ list">
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">About</a>
+    <footer class="footer ">
+        <div class="footer__column ">
+            <nav class="footer__navigation ">
+                <ul class="footer__ list ">
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">About</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Support</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Support</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Blog</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Blog</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Press</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Press</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Api</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Api</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Jobs</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Jobs</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Privacy</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Privacy</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Terms</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Terms</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Directory</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Directory</a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer_link">Language</a>
+                    <li class="footer__list-item ">
+                        <a href="# " class="footer_link ">Language</a>
                     </li>
 
                 </ul>
             </nav>
 
-            <div class="footer__column">
-                <span class="footer__copy">@ 2018 Hennagram</span>
+            <div class="footer__column ">
+                <span class="footer__copy ">@ 2018 Hennagram</span>
 
             </div>
     </footer>
