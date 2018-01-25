@@ -9,13 +9,13 @@
     font-size: 13px;
    
 }
-.footer__column {
-    display:flex;
-    justify-content:space-between;
-}
+
 .footer__list {
     display:flex;
 }
 .footer__list-item {
     margin-right:10px;
+}
+.footer__column .footer__copy {
+    color: #999;
 }
