@@ -23,36 +23,39 @@
             <div class="login__box">
                 <img src="images\logo.png" alt="logo" title="logo" class="login__logo">
 
-                <form action="feed.html" method="get">
-                    <input placeholder="Phone number, username or email" type="ID" name="ID" value="" required>
+                <form action="feed.html" method="get" class="login_form">
+                    <input placeholder="Phone number, username or email" type="text" name="username" required>
                     <input placeholder="password" type="password" name="password" value="" required>
                     <input type="submit" value="Log In">
                 </form>
 
-
-
+                
                 <span class="login__or">or</span>
+                
+                
+                <a href="#" class="login__link--dark">
+                    <i class="fa fa-facebook-square" aria-hidden="true">  </i>
+                    Log in with Facebook
+                </a>
 
-                <a href="#" class="lonin__link--dark">Log in with Facebook</a>
-
-                <a href="#" class="lonin__link--dark--small">forgot password?</a>
+                <a href="#" class="login__link--dark--small">
+                    forgot password?
+                </a>
 
 
             </div>
             <div class="login__box">
                 <span>Don't have an account?</span>
-                <a href="#" class="longin_link">sign up</a>
+                <a href="#" class="login__link">sign up</a>
             </div>
             <div class="login__box login__box--transparent"></div>
             <span>Get the app.</span>
             <div class="login__appstores">
-                <div>
-                    <img src="images\google.png" alt="" class="login__appstores">
-                    <img src="images\appstore.png" alt="" class="login__appstores">
-                </div>
+                <img src="images\google.png" alt="" class="login__app">
+                <img src="images\appstore.png" alt="" class="login__app">
             </div>
         </div>
-        </main>
+    </main>
 
     <footer class="footer">
             <div class="footer__column">
