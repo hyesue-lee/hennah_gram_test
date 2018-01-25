@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    max-width: 935px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+   
+}
+.footer__column {
+    display:flex;
+    justify-content:space-between;
+}
+.footer__list {
+    display:flex;
+}
+.footer__list-item {
+    margin-right:10px;
+}
