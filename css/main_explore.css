@@ -1,0 +1,74 @@
+.explore {
+  
+  border:0
+  width: 100%;
+
+  margin-top: 60px;
+  width: 100%;
+  max-width: 500px;
+
+  
+}
+.explore__users {
+    
+  padding: 10px 10px;
+}
+.explore__user {
+    background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  padding:10px 10px;
+
+}
+.explore__user__img .explore__user-img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: crazy 5s linear ;
+}
+
+.explore__user,
+.explore__column {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.full_name{
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+.explore__column {
+  justify-content: space-between;
+}
+
+.explore__button {
+  background-color: #3e99ed;
+  height: 30px;
+  width: 80px;
+
+  padding: 5px 0;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+ 
+  animation: crazy 5s linear ;
+}
+
+.explore__button:active{
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+}
+
+@keyframes cradzy {
+    0% { transform: translateY(151px) }
+
+    50% { transform: translateY(20px)}
+}
