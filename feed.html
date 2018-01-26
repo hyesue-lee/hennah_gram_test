@@ -11,18 +11,18 @@
 
 <body>
 
-    <!--main.login>div.login__class*2-->
+    <!--main.login>   div.login__class*2-->
     <header class="header">
         <div>
-            <a href="feed.html" class="header__again">
+            <a href="feed.html" class="header__logo">
                 <img src="images\logo.png" class="header__img">
             </a>
         </div>
-        <form action="#" method="get">
+        <form action="#" method="get" class="header__search">
             <input placeholder="search" type="text" name="search" value="" required>
         </form>
         <nav class="header__navigation">
-            <ul class="header_list">
+            <ul class="header__list">
                 <li class="header__list-item">
                     <a href="explore.html" class="header__link">
                         <i class="fa fa-compass" aria-hidden="true"></i>
@@ -42,55 +42,65 @@
             </ul>
         </nav>
     </header>
+
+
+
     <!--main parts-->
     <main class="feed">
+
+
         <div class="photo">
             <header class="photo__header">
+                <img src="images\pple.jpg" class="photo__header__img">
                 <div class="photo__header__contents">
-                    <img src="images\pple.jpg" class="photo__header__img">
+                    <span class="photo__user">cheers.hennah</span>
+                    <span class="photo__location">Chiang Mai</span>
                 </div>
-                <span class="photo__header__user">cheers.hennah</span>
             </header>
 
-            <div class="photo__main">
-                <img src="images\photo.jpg" class="photo__main__img">
-            </div>
-            <footer>
+
+            <img src="images\photo.jpg" class="photo__main__img">
+
+            <div class="photo__meta">
                 <div class="photo__icons">
-                    <span class="photo__icon-box">
+                    <span class="photo__icon">
                         <i class="fa fa-heart-o " aria-hidden="true "></i>
                     </span>
-                    <span class="photo__icon-box">
+                    <span class="photo__icon">
                         <i class="fa fa-comment-o " aria-hidden="true "></i>
                     </span>
                 </div>
                 <div class="photo__icons">
-                    <span class="photo__icon-box">
+                    <span class="photo__bookmark">
                         <i class="fa fa-bookmark-o " aria-hidden="true "></i>
                     </span>
                 </div>
                 <span class="photo__likes ">14,490 likes</span>
                 <ul class="photo__comments__list ">
-                    <li class="photo__comments__list-itme">
-                        <span class="photo__comments__user">jh</span> someone
+                    <li class="photo__comments__list-item">
+                        <span class="photo__comments__user">
+                            jh
+                        </span> wtf??
                     </li>
-                    <li class="photo__comments__list-itme">
-                        <span class="photo__comments__user">almi</span> 123123123213
+
+                    <li class="photo__comments__list-item">
+                        <span class="photo__comments__user">
+                            almi
+                        </span> 123123123213
                     </li>
-                    <li class="photo__comments__list-itme">
-                        <span class="photo__comments__user">hennah</span> asgarafr
+                    <li class="photo__comments__list-item">
+                        <span class="photo__comments__user">
+                            hennah
+                        </span> asgarafr
                     </li>
                 </ul>
-                <span class="photo_times ">2 days ago</span>
-                <div>
+                <span class="photo__date "> 2 days ago </span>
+                <div class="photo__add-comment">
                     <textarea placeholder="Add a comment.."></textarea>
                     <i class="fa fa-ellipsis-h"></i>
 
                 </div>
-
-
-            </footer>
-
+            </div>
         </div>
     </main>
     <footer class="footer">

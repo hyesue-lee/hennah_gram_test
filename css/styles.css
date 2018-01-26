@@ -1,12 +1,10 @@
-
 @import "reset.css";
 @import "globals.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 @import "footer.css";
 @import "login.css";
+@import "header.css";
 
 body {
-
-    font-size:13px;
-  
+  font-size: 13px;
 }
