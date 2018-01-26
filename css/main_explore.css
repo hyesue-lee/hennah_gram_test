@@ -1,30 +1,26 @@
 .explore {
-  
-  border:0
-  width: 100%;
+  border: 0;
 
+  max-width: 600px;
+  width: 100%;
   margin-top: 60px;
   width: 100%;
-  max-width: 500px;
-
-  
 }
 .explore__users {
-    
+  width: 100%;
   padding: 10px 10px;
 }
 .explore__user {
-    background-color: white;
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.09);
-  padding:10px 10px;
-
+  padding: 10px 10px;
 }
 .explore__user__img .explore__user-img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  animation: crazy 5s linear ;
+  animation: crazy 5s linear;
 }
 
 .explore__user,
@@ -33,10 +29,10 @@
   justify-content: center;
   justify-content: space-between;
 }
-.full_name{
-    display: block;
-    font-size: 12px;
-    color: #999;
+.full_name {
+  display: block;
+  font-size: 12px;
+  color: #999;
 }
 
 .explore__column {
@@ -57,18 +53,21 @@
   outline: none;
   cursor: pointer;
 
- 
-  animation: crazy 5s linear ;
+  animation: crazy 5s linear;
 }
 
-.explore__button:active{
-    height: 100px;
-    width: 100px;
-    background-color: yellowgreen;
+.explore__button:active {
+  height: 100px;
+  width: 100px;
+  background-color: yellowgreen;
 }
 
 @keyframes cradzy {
-    0% { transform: translateY(151px) }
+  0% {
+    transform: translateY(151px);
+  }
 
-    50% { transform: translateY(20px)}
+  50% {
+    transform: translateY(20px);
+  }
 }

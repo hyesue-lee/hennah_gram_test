@@ -7,6 +7,14 @@
   align-items: center;
   font-weight: bold;
   font-size: 13px;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__navigation .footer__list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__list {
