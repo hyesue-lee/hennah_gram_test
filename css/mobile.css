@@ -6,10 +6,10 @@
     display: none;
   }
 
+  /*
   .login .login__colum > img {
     display: none;
-  }
-
+  */
   .login .login__column {
     width: 70%;
   }
@@ -18,7 +18,7 @@
     justify-content: center;
   }
   .login .login__column:nth-child(1) {
-    width: 0;
+    display: none;
   }
   .login_box {
     width: 50%;

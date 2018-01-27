@@ -20,7 +20,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  animation: crazy 5s linear;
+  /*animation: crazy 5s linear;*/
 }
 
 .explore__user,
@@ -53,13 +53,10 @@
   outline: none;
   cursor: pointer;
 
-  animation: crazy 5s linear;
+  /*animation: crazy 5s linear;*/
 }
-
 .explore__button:active {
-  height: 100px;
-  width: 100px;
-  background-color: yellowgreen;
+  opacity: 0.5;
 }
 
 @keyframes cradzy {
