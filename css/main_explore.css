@@ -21,6 +21,7 @@
   height: 30px;
   border-radius: 50%;
   /*animation: crazy 5s linear;*/
+  transition: ;
 }
 
 .explore__user,
@@ -59,7 +60,7 @@
   opacity: 0.5;
 }
 
-@keyframes cradzy {
+@keyframes pretty {
   0% {
     transform: translateY(151px);
   }
