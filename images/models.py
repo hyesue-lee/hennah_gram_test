@@ -18,7 +18,7 @@ class Comment(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
     def __str__(self):
-        return f'{self.message}'
+        return f'{self.created_by.username}'
 
 class Like(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
