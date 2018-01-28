@@ -7,14 +7,17 @@
   width: 100%;
 }
 .explore__users {
-  width: 100%;
-  padding: 10px 10px;
-}
-.explore__user {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.09);
+  width: 100%;
+  border-bottom: 0;
+}
+
+.explore__user {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   padding: 10px 10px;
 }
+
 .explore__user__img .explore__user-img {
   margin-right: 10px;
   width: 30px;

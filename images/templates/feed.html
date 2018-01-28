@@ -8,17 +8,18 @@
 <main class="feed">
 
 {% for image in images %} <!--g-->
+
     <div class="photo">
         <header class="photo__header">
-            <img src="images\photo.png" class="photo__header__img">
+            <img src="{% static 'images/pple.png' %}" class="photo__header__img">
             <div class="photo__header__contents">
-                <span class="photo__user">cheers.hennah</span>
-                <span class="photo__location">Chiang Mai</span>
+                <span class="photo__user">{{image.created_by.username}}</span>
+                <span class="photo__location">{{image.location}}</span>
             </div>
         </header>
 
 
-        <img src="images\photo.png" class="photo__main__img">
+        <img src="{% static 'images/photo.png' %}" class="photo__main__img">
 
         <div class="photo__meta">
             <div class="icons__container">
@@ -45,20 +46,12 @@
             <ul class="photo__comments__list ">
                 <li class="photo__comments__list-item">
                     <span class="photo__comments__user">
-                        jh
-                    </span> wdfdfasdferedf??????
+                        comment_user_name
+                    </span> 
+                    <span>comment_massage</span>
                 </li>
 
-                <li class="photo__comments__list-item">
-                    <span class="photo__comments__user">
-                        almi
-                    </span> 123123123213
-                </li>
-                <li class="photo__comments__list-item">
-                    <span class="photo__comments__user">
-                        {{image.created_by.username}}
-                    </span> asgarafr
-                </li>
+
             </ul>
             <span class="photo__date "> 2 days ago </span>
             <div class="photo__add-comment">
@@ -72,69 +65,6 @@
 
     </div>
 
-    <div class="photo">
-        <header class="photo__header">
-            <img src="images\pple.png" class="photo__header__img">
-            <div class="photo__header__contents">
-                <span class="photo__user">cheers.hennah</span>
-                <span class="photo__location">Chiang Mai</span>
-            </div>
-        </header>
-
-
-        <img src="images\photo.png" class="photo__main__img">
-
-        <div class="photo__meta">
-            <div class="icons__container">
-
-                <div class="photo__icons">
-                    <span class="photo__icon">
-
-                        <i class="fa fa-heart-o " aria-hidden="true "></i>
-                    </span>
-                    <span class="photo__icon">
-                        <i class="fa fa-comment-o " aria-hidden="true "></i>
-                    </span>
-                </div>
-                <div class="photo__icons">
-                    <span class="photo__icon">
-                        <i class="fa fa-bookmark-o " aria-hidden="true "></i>
-                    </span>
-                </div>
-            </div>
-
-            <span class="photo__likes ">14,490 likes</span>
-
-
-            <ul class="photo__comments__list ">
-                <li class="photo__comments__list-item">
-                    <span class="photo__comments__user">
-                        jh
-                    </span> wtf??
-                </li>
-
-                <li class="photo__comments__list-item">
-                    <span class="photo__comments__user">
-                        almi
-                    </span> 123123123213
-                </li>
-                <li class="photo__comments__list-item">
-                    <span class="photo__comments__user">
-                        hennah
-                    </span> asgarafr
-                </li>
-            </ul>
-            <span class="photo__date "> 2 days ago </span>
-            <div class="photo__add-comment">
-                <textarea placeholder="Add a comment.." class="photo__textarea"></textarea>
-                <a href="# " class="textare__more ">
-                    <i class="fa fa-ellipsis-h"></i>
-                </a>
-            </div>
-        </div>
-
-
-    </div>
     {% endfor %}
 </main>
 
