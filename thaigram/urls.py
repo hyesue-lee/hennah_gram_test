@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from images import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', views.index, name='home'),
+    path('explore/', views.explore, name='explore'),
+    path('feed/', views.feed, name='feed'),
+    path('profile/', views.profile, name='profile'),
     path('admin/', admin.site.urls),
-]
+] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+
+
+

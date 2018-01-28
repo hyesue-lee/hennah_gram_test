@@ -1,0 +1,61 @@
+
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Feed {% endblock %}
+
+{% block content %}
+
+<main class="login">
+
+    <div class="login__column">
+        <img src="images\phoneImage.png" alt="Phone" title="Phone">
+    </div>
+    <div class="login__column">
+
+
+        <div class="login__box">
+            <img src="images\logo.png" alt="logo" title="logo" class="login__logo">
+
+            <form action="feed.html" method="get" class="login__form">
+                <input placeholder="Phone number, username or email" type="text" name="username" required>
+                <input placeholder="password" type="password" name="password" value="" required>
+                <input type="submit" value="Log In">
+            </form>
+
+
+            <span class="login__or">or</span>
+
+
+            <a href="#" class="login__link--dark">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                Log in with Facebook
+            </a>
+
+            <a href="#" class="login__link--dark--small">
+                forgot password?
+            </a>
+
+
+        </div>
+        <div class="login__box">
+
+            <span>Don't have an account?</span>
+            <a href="#" class="login__link">sign up</a>
+
+        </div>
+        <div class="login__box login__box--transparent">
+            <span>Get the app.</span>
+            <div class="login__appstores">
+                <img src="images\google.png" alt="" class="login__app">
+                <img src="images\appstore.png" alt="" class="login__app">
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+{% endblock %}

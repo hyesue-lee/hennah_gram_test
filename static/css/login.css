@@ -1,0 +1,135 @@
+.login {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.login__column > img {
+  width: 100%;
+}
+
+.login .login__column {
+  width: 47.5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__logo {
+  width: 180px;
+  height: 50px;
+}
+
+.login__box {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.login__box:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.login__form {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.login__form input {
+  border: 0;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  background-color: #fafafa;
+  padding: 10px 0;
+  font-size: 13px;
+  padding-left: 10px;
+}
+input[type="text"] {
+  height: 45px;
+  margin-bottom: 10px;
+  outline: none;
+}
+input[type="password"] {
+  height: 45px;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  background-color: #3e99ed;
+  height: 30px;
+  margin-top: 15px;
+
+  padding: 5px 0;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  font-size: 14px;
+}
+
+.login__form input:focus {
+  outline: none;
+  border-color: #b2b2b2;
+}
+
+.login__form input[type="submit"]:active {
+  outline: none;
+  opacity: 0.8;
+}
+
+.login__box.login__box--transparent {
+  background-color: transparent;
+  border: none;
+}
+.login__appstores {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.login__appstores .login__app {
+  margin-right: 16px;
+  width: 50%;
+  height: 10%;
+}
+
+.login__box .login__or {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: gray;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999;
+}
+.login__box .login__link {
+  color: #385185;
+  margin-left: 10px;
+}
+
+.login__box .login__link--dark {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  color: #385185;
+}
+.login__box .login__link--dark i {
+  margin-right: 10px;
+}
+
+.login__box .login__link--dark--small {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #385185;
+}

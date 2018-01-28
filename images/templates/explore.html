@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Feed {% endblock %}
+
+{% block content %}
+
+
+<main class="explore">
+
+        {% for image in images %} 
+        <ul class="explore__users">
+            <li class="explore__user">
+                <div class="explore__column">
+                    <div class="explore__user__img">
+                        <img src="images\pple.png" class="explore__user-img">
+                    </div>
+                    <div class="explore__user__detail">
+                        <span class="user_name">{{image.created_by.username}}</span>
+                        <span class="full_name">Full_name</span>
+                    </div>
+                </div>
+                <div class="explore__column">
+                    <button class="explore__button">follow</button>
+                </div>
+            </li>
+            <li class="explore__user">
+                <div class="explore__column">
+                    <div class="explore__user__img">
+                        <img src="images\pple.png" class="explore__user-img">
+                    </div>
+                    <div class="explore__user__detail">
+                        <span class="user_name">user_name</span>
+                        <span class="full_name">Full_name</span>
+                    </div>
+                </div>
+                <div class="explore__column">
+                    <button class="explore__button">follow</button>
+                </div>
+            </li>
+            <li class="explore__user">
+                <div class="explore__column">
+                    <div class="explore__user__img">
+                        <img src="images\pple.png" class="explore__user-img">
+                    </div>
+                    <div class="explore__user__detail">
+                        <span class="user_name">user_name</span>
+                        <span class="full_name">Full_name</span>
+                    </div>
+                </div>
+                <div class="explore__column">
+                    <button class="explore__button">follow</button>
+                </div>
+            </li>
+
+        </ul>
+
+        {% endfor %}
+    </main>
+    
+    {% endblock %}

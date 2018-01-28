@@ -1,0 +1,129 @@
+.feed {
+  
+  width: 100%;
+  max-width: 600px;
+  margin-top: 60px;
+  width: 100%;
+ 
+}
+.photo{
+  
+  margin-bottom:60px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+.photo__header {
+  
+  
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-left: 10px;
+ 
+
+}
+
+.photo__header__img{
+   
+    margin-right: 10px;
+    width:30px;
+    height: 30px;
+    border-radius:50%; /*동그라미만들기*/
+}
+.photo__header .photo__header__contents {
+  padding-top: 20px;
+}
+
+
+
+.photo__header .photo__header__contents .photo__user {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+}
+.photo__header .photo__header__contents .photo__location {
+  font-size: 9px;
+}
+.photo__meta {
+    padding-left:10px;
+    padding-right:10px
+}
+
+.photo__main__img {
+  width: 100%;
+}
+
+.photo__meta{
+    padding-
+}
+
+.icons__container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  
+  margin-top: 10px;
+}
+
+.photo__icons .photo__icon {
+  font-size: 25px;
+  font-weight: 5px;
+  cursor:pointer;
+}
+
+
+.photo__likes {
+  display: block;
+  font-weight: bold;
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.photo__comments__list {
+  margin-bottom: 10px;
+}
+.photo__comments__list-item {
+  
+  margin-bottom: 5px;
+}
+.photo__comments__user {
+  font-weight: bold;
+}
+.photo__date {
+  
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #999;
+}
+.photo__add-comment {
+  
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  width: 100%;
+}
+.photo__add-comment i {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.photo__textarea {
+  width: 95%;
+  height: 50px;
+  border: 0;
+  padding-top: 20px;
+}
+.photo__add-comment textarea:focus {
+  outline: none;
+  border-color: #b2b2b2;
+  background-color: white;
+}

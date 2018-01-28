@@ -1,0 +1,39 @@
+@media screen and (min-width: 3px) and (max-width: 700px) {
+  .header {
+    margin-left: 30px;
+  }
+  .header__search {
+    display: none;
+  }
+
+  /*
+  .login .login__colum > img {
+    display: none;
+  */
+  .login .login__column {
+    width: 70%;
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+  }
+  .login .login__column:nth-child(1) {
+    display: none;
+  }
+  .login_box {
+    width: 50%;
+  }
+  .feed {
+    margin-top: 0px;
+    margin-left: 0;
+  }
+  .feed .photo {
+    background-color: #fafafa;
+    margin-left: 0;
+    border: 0;
+  }
+
+  .footer {
+    margin-left: 30px;
+  }
+}
