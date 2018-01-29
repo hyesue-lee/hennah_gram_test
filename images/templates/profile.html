@@ -1,3 +1,97 @@
-{% load static %}
 
-<body>pretty hennah</body>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Feed {% endblock %}
+
+{% block content %}
+
+<main class="profile">  
+      
+      
+        <header class="profile__header">
+            <div class="profile__header__column">
+                 <img src="{% static 'images/pple.png' %}" class="profile__header__img">
+            </div>
+            <div class="profile__header__column">
+                <div class="profile__header__contents">
+                    <div class="profile_introduce">
+                        <span class="profile__username">{{image.created_by.username}}</span>
+                        <button class="profile__edit">Edit profile</button>
+                        <span class="profile__edit__icon">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="profile_introduce">
+                            <span class="profile__posts__count">
+                                5  
+                            </span>
+                            <span class="profile__posts">
+                                  posts    
+                            </span>
+                            <span class="profile__follower__count">
+                                353451     
+                            </span>
+                            <span class="profile__follower">
+                                followers    
+                                </span>
+                            <span class="profile__following__count">
+                                1 
+                            </span>
+                            <span class="profile__following">
+                                   following
+                            </span>
+                    </div>
+                    <div class="profile__introduce">
+                        <span class="profile__name">{{image.created_by.username}}</span>
+                        <span class="profile__bio">To love oneself if a lifelong romance.</span>
+                    </div>
+                </div>
+            </div> 
+    
+        </header>
+        
+    <div class="profile__user__contents">
+       
+        <div class="profile__photos">
+            
+            
+            <div class="profile__photos__info">
+                
+                    
+                    <span class="profile__photos__post">
+                            posts
+                    </span>
+                    <span class="profile__photos__icon">
+                            <i class="fa fa-th" aria-hidden="true"></i>
+                        </span>
+
+
+                    <span class="profile__photos__save">
+                            saved
+                    </span>
+                    <span class="profile__photos__icon">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </span>
+                
+            </div>  
+            
+            
+
+
+            <div class="profile__photos1">
+                <ul class="profile__photos__list">
+                        {% for image in images %} 
+                    <li class="profile__photos__list-item" >            
+                            <img src="/media/{{image.file}}" class="profile__photo">   
+                    </li>
+                     {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    
+   
+</main>
+{% endblock %}

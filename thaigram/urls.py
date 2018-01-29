@@ -23,9 +23,7 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('explore/', views.explore, name='explore'),
     path('feed/', views.feed, name='feed'),
+    path('upload', views.upload, name='upload'),
     path('profile/', views.profile, name='profile'),
     path('admin/', admin.site.urls),
-] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
-
-
-
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

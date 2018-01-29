@@ -5,6 +5,7 @@
 @import "footer.css";
 @import "login.css";
 @import "header.css";
-@import "main_feed.css";
-@import "main_explore.css";
+@import "feed.css";
+@import "explore.css";
 @import "mobile.css";
+@import "profile.css";

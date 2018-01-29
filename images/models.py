@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
 class Image(models.Model):
-    file = models.FileField(max_length=50)
+    file = models.FileField(max_length=1000)
     location = models.CharField(max_length=50)
     caption = models.TextField()
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True)

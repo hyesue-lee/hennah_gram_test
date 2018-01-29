@@ -1,0 +1,95 @@
+.profile {
+  width: 100%;
+  max-width: 700px;
+
+  width: 100%;
+}
+.profile__header {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+.profile__header__column {
+  display: flex;
+  justify-content: center;
+  padding: 100px 100;
+  height: 100%;
+}
+.profile__header__column:nth-child(1) {
+  height: 100%;
+  width: 40%;
+  padding: 20px;
+}
+.profile__header__column:nth-child(2) {
+  height: 100%;
+  width: 60%;
+  align-items: center;
+}
+.profile_introduce {
+  margin-bottom: 20px;
+}
+.profile__header__img {
+  margin-right: 10px;
+  width: 100%;
+  border-radius: 50%; /*동그라미만들기*/
+}
+.profile__header__contents {
+  display: block;
+}
+.profile__photos {
+}
+.profile__photos__info {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 0 200px;
+  font-size: 15px;
+}
+.profile__photos__icon {
+  visibility: hidden;
+}
+.profile__photos {
+  width: 100%;
+  min-width: 900px;
+  display: inline;
+  flex-wrap: wrap;
+}
+.profile__photos__list-item {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.profile__photo {
+  width: 30%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.profile__edit {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  height: 35px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 10px 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.profile__edit__icon {
+  font-size: 20px;
+}
+.profile__name {
+  font-weight: bold;
+}
+.profile__posts,
+.profile__follower,
+.profile__following {
+  margin-right: 20px;
+}
