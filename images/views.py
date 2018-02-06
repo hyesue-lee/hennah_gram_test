@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Image
+from .models import User
 from django.shortcuts import redirect
 # Create your views here.
 
@@ -9,8 +10,7 @@ def index(request):
     if user.is_authenticated:
         all_images = Image.objects.all()
         return render(request, 'base.html', context = {
-            'images': all_images
-        })
+            'images': all_images })
     else:
         return render(request, 'login.html',)
 
@@ -26,32 +26,35 @@ def explore(request):
 def feed(request):
     user = request.user
     if user.is_authenticated:
-        print(user.iamge_set.all())
+        print(user.image_set.all())
         all_images = Image.objects.all()
         
         return render(request, 'feed.html', context = {
             'images': all_images} )
     else:
-        return render(request, 'login.html',)        
+        return HttpResponse('log in plz')
+       # return render(request, 'login.html',)        
 
 def profile(request):
     user = request.user
     if user.is_authenticated:
         all_images = Image.objects.all()
+
         return render(request, 'profile.html',context = {
-            'images': all_images} )
+            'images': all_images ,
+            'user': user} )
     else:
         return render(request, 'login.html',)
 
 def upload(request):
-    if request.methold == "POST":
+    if request.method == "POST":
         user = request.user
         if user.is_authenticated:
             location = request.POST.get('location')
-            catipon = request.POST.get('caption')
-            uploaded_file = request.FILE.get('file')
+            caption = request.POST.get('caption')
+            uploaded_file = request.FILES.get('file')
             Image.objects.create(
-                 file=uploaded_file,
+                  file=uploaded_file,
                   location=location,
                   caption=caption,
                   created_by=user,

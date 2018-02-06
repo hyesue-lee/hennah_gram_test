@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import Image, Comment, Like
 
 class ImageAdmin (admin.ModelAdmin):
+
+
     list_display = (
         'location' ,
         'caption',
@@ -26,7 +28,8 @@ class ImageAdmin (admin.ModelAdmin):
     )
 
     ordering = (
-        'location',
+        'created_at',
+        'updated_at',
     )
 
 class CommentAdmin (admin.ModelAdmin):

@@ -7,15 +7,18 @@
 
 <main class="profile">  
       
-      
+          
         <header class="profile__header">
+                
             <div class="profile__header__column">
                  <img src="{% static 'images/pple.png' %}" class="profile__header__img">
             </div>
             <div class="profile__header__column">
                 <div class="profile__header__contents">
                     <div class="profile_introduce">
-                        <span class="profile__username">{{image.created_by.username}}</span>
+                          
+                        <span class="profile__username">{{user.username}}</span>
+                       
                         <button class="profile__edit">Edit profile</button>
                         <span class="profile__edit__icon">
                             <i class="fa fa-cog" aria-hidden="true"></i>
@@ -42,12 +45,13 @@
                             </span>
                     </div>
                     <div class="profile__introduce">
-                        <span class="profile__name">{{image.created_by.username}}</span>
+                        <span class="profile__name">{{user.username}}</span>
                         <span class="profile__bio">To love oneself if a lifelong romance.</span>
                     </div>
                 </div>
             </div> 
     
+           
         </header>
         
     <div class="profile__user__contents">
